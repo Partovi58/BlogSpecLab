@@ -48,14 +48,14 @@
 
 ### Tests for User Story 1
 
-- [ ] T009 [P] [US1] Unit test for draft creation domain rules and title/content validation in `tests/unit/domain/test_post_creation.py`
-- [ ] T010 [P] [US1] Integration/Contract test for `POST /api/v1/author/posts` endpoint in `tests/contract/api/test_create_draft.py`
+- [x] T009 [P] [US1] Unit test for draft creation domain rules and title/content validation in `tests/unit/domain/test_post_creation.py`
+- [x] T010 [P] [US1] Integration/Contract test for `POST /api/v1/author/posts` endpoint in `tests/contract/api/test_create_draft.py`
 
 ### Implementation for User Story 1
 
-- [ ] T011 [US1] Implement `create_draft` use case in `src/application/services/post_service.py`
-- [ ] T012 [US1] Implement `POST /api/v1/author/posts` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
-- [ ] T013 [US1] Add payload sanitization and non-empty/whitespace validation logic in `src/application/dto/post_dto.py`
+- [x] T011 [US1] Implement `create_draft` use case in `src/application/services/post_service.py`
+- [x] T012 [US1] Implement `POST /api/v1/author/posts` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
+- [x] T013 [US1] Add payload sanitization and non-empty/whitespace validation logic in `src/application/dto/post_dto.py`
 
 **Checkpoint**: User Story 1 (MVP) is fully functional and independently testable.
 
