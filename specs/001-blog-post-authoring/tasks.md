@@ -89,14 +89,14 @@
 
 ### Tests for User Story 3
 
-- [ ] T018 [P] [US3] Unit test for publishing state transition and immutability invariants in `tests/unit/domain/test_post_publishing.py`
-- [ ] T019 [P] [US3] Integration/Contract test for `POST /api/v1/author/posts/{id}/publish` endpoint in `tests/contract/api/test_publish_post.py`
+- [x] T018 [P] [US3] Unit test for publishing state transition and immutability invariants in `tests/unit/domain/test_post_publishing.py`
+- [x] T019 [P] [US3] Integration/Contract test for `POST /api/v1/author/posts/{id}/publish` endpoint in `tests/contract/api/test_publish_post.py`
 
 ### Implementation for User Story 3
 
-- [ ] T020 [US3] Implement `publish_post` use case with system timestamp recording in `src/application/services/post_service.py`
-- [ ] T021 [US3] Implement `POST /api/v1/author/posts/{id}/publish` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
-- [ ] T022 [US3] Enforce immutability checks for published posts in `src/domain/models/post.py`
+- [x] T020 [US3] Implement `publish_post` use case with system timestamp recording in `src/application/services/post_service.py`
+- [x] T021 [US3] Implement `POST /api/v1/author/posts/{id}/publish` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
+- [x] T022 [US3] Enforce immutability checks for published posts in `src/domain/models/post.py`
 
 **Checkpoint**: User Story 3 is fully functional and independently testable.
 
