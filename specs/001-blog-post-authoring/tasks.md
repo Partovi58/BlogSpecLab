@@ -30,11 +30,11 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Define Post domain entity, Status enum (`DRAFT`, `PUBLISHED`), and state invariant rules in `src/domain/models/post.py`
-- [ ] T005 [P] Define domain exceptions (e.g. `UnauthorizedException`, `ImmutablePostException`, `InvalidPayloadException`) in `src/domain/exceptions/post_exceptions.py`
-- [ ] T006 [P] Implement authentication context extraction middleware in `src/infrastructure/web/middlewares/auth_middleware.py`
-- [ ] T007 Define PostRepository interface and database persistence setup in `src/infrastructure/persistence/post_repository.py`
-- [ ] T008 Configure application DTO schemas and validation rules in `src/application/dto/post_dto.py`
+- [x] T004 Define Post domain entity, Status enum (`DRAFT`, `PUBLISHED`), and state invariant rules in `src/domain/models/post.py`
+- [x] T005 [P] Define domain exceptions (e.g. `UnauthorizedException`, `ImmutablePostException`, `InvalidPayloadException`) in `src/domain/exceptions/post_exceptions.py`
+- [x] T006 [P] Implement authentication context extraction middleware in `src/infrastructure/web/middlewares/auth_middleware.py`
+- [x] T007 Define PostRepository interface and database persistence setup in `src/infrastructure/persistence/post_repository.py`
+- [x] T008 Configure application DTO schemas and validation rules in `src/application/dto/post_dto.py`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel or sequentially.
 
@@ -48,14 +48,14 @@
 
 ### Tests for User Story 1
 
-- [ ] T009 [P] [US1] Unit test for draft creation domain rules and title/content validation in `tests/unit/domain/test_post_creation.py`
-- [ ] T010 [P] [US1] Integration/Contract test for `POST /api/v1/author/posts` endpoint in `tests/contract/api/test_create_draft.py`
+- [x] T009 [P] [US1] Unit test for draft creation domain rules and title/content validation in `tests/unit/domain/test_post_creation.py`
+- [x] T010 [P] [US1] Integration/Contract test for `POST /api/v1/author/posts` endpoint in `tests/contract/api/test_create_draft.py`
 
 ### Implementation for User Story 1
 
-- [ ] T011 [US1] Implement `create_draft` use case in `src/application/services/post_service.py`
-- [ ] T012 [US1] Implement `POST /api/v1/author/posts` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
-- [ ] T013 [US1] Add payload sanitization and non-empty/whitespace validation logic in `src/application/dto/post_dto.py`
+- [x] T011 [US1] Implement `create_draft` use case in `src/application/services/post_service.py`
+- [x] T012 [US1] Implement `POST /api/v1/author/posts` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
+- [x] T013 [US1] Add payload sanitization and non-empty/whitespace validation logic in `src/application/dto/post_dto.py`
 
 **Checkpoint**: User Story 1 (MVP) is fully functional and independently testable.
 
@@ -69,13 +69,13 @@
 
 ### Tests for User Story 2
 
-- [ ] T014 [P] [US2] Unit test for draft editing domain rules and ownership validation in `tests/unit/domain/test_post_editing.py`
-- [ ] T015 [P] [US2] Integration/Contract test for `PUT /api/v1/author/posts/{id}` endpoint in `tests/contract/api/test_edit_draft.py`
+- [x] T014 [P] [US2] Unit test for draft editing domain rules and ownership validation in `tests/unit/domain/test_post_editing.py`
+- [x] T015 [P] [US2] Integration/Contract test for `PUT /api/v1/author/posts/{id}` endpoint in `tests/contract/api/test_edit_draft.py`
 
 ### Implementation for User Story 2
 
-- [ ] T016 [US2] Implement `edit_draft` use case with author authorization check in `src/application/services/post_service.py`
-- [ ] T017 [US2] Implement `PUT /api/v1/author/posts/{id}` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
+- [x] T016 [US2] Implement `edit_draft` use case with author authorization check in `src/application/services/post_service.py`
+- [x] T017 [US2] Implement `PUT /api/v1/author/posts/{id}` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
 
 **Checkpoint**: User Story 2 is fully functional and independently testable alongside US1.
 
@@ -89,14 +89,14 @@
 
 ### Tests for User Story 3
 
-- [ ] T018 [P] [US3] Unit test for publishing state transition and immutability invariants in `tests/unit/domain/test_post_publishing.py`
-- [ ] T019 [P] [US3] Integration/Contract test for `POST /api/v1/author/posts/{id}/publish` endpoint in `tests/contract/api/test_publish_post.py`
+- [x] T018 [P] [US3] Unit test for publishing state transition and immutability invariants in `tests/unit/domain/test_post_publishing.py`
+- [x] T019 [P] [US3] Integration/Contract test for `POST /api/v1/author/posts/{id}/publish` endpoint in `tests/contract/api/test_publish_post.py`
 
 ### Implementation for User Story 3
 
-- [ ] T020 [US3] Implement `publish_post` use case with system timestamp recording in `src/application/services/post_service.py`
-- [ ] T021 [US3] Implement `POST /api/v1/author/posts/{id}/publish` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
-- [ ] T022 [US3] Enforce immutability checks for published posts in `src/domain/models/post.py`
+- [x] T020 [US3] Implement `publish_post` use case with system timestamp recording in `src/application/services/post_service.py`
+- [x] T021 [US3] Implement `POST /api/v1/author/posts/{id}/publish` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
+- [x] T022 [US3] Enforce immutability checks for published posts in `src/domain/models/post.py`
 
 **Checkpoint**: User Story 3 is fully functional and independently testable.
 
