@@ -30,11 +30,11 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Define Post domain entity, Status enum (`DRAFT`, `PUBLISHED`), and state invariant rules in `src/domain/models/post.py`
-- [ ] T005 [P] Define domain exceptions (e.g. `UnauthorizedException`, `ImmutablePostException`, `InvalidPayloadException`) in `src/domain/exceptions/post_exceptions.py`
-- [ ] T006 [P] Implement authentication context extraction middleware in `src/infrastructure/web/middlewares/auth_middleware.py`
-- [ ] T007 Define PostRepository interface and database persistence setup in `src/infrastructure/persistence/post_repository.py`
-- [ ] T008 Configure application DTO schemas and validation rules in `src/application/dto/post_dto.py`
+- [x] T004 Define Post domain entity, Status enum (`DRAFT`, `PUBLISHED`), and state invariant rules in `src/domain/models/post.py`
+- [x] T005 [P] Define domain exceptions (e.g. `UnauthorizedException`, `ImmutablePostException`, `InvalidPayloadException`) in `src/domain/exceptions/post_exceptions.py`
+- [x] T006 [P] Implement authentication context extraction middleware in `src/infrastructure/web/middlewares/auth_middleware.py`
+- [x] T007 Define PostRepository interface and database persistence setup in `src/infrastructure/persistence/post_repository.py`
+- [x] T008 Configure application DTO schemas and validation rules in `src/application/dto/post_dto.py`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel or sequentially.
 
