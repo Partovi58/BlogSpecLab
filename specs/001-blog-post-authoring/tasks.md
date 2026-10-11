@@ -18,9 +18,9 @@
 
 **Purpose**: Project initialization and basic directory structure per plan.md
 
-- [ ] T001 Create project source directory structure `src/domain`, `src/application`, `src/infrastructure`, `tests` per implementation plan
-- [ ] T002 [P] Configure linter and code formatting tools per Constitution standards
-- [ ] T003 [P] Setup dependency management and project configuration
+- [x] T001 Create project source directory structure `src/domain`, `src/application`, `src/infrastructure`, `tests` per implementation plan
+- [x] T002 [P] Configure linter and code formatting tools per Constitution standards
+- [x] T003 [P] Setup dependency management and project configuration
 
 ---
 
