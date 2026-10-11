@@ -69,13 +69,13 @@
 
 ### Tests for User Story 2
 
-- [ ] T014 [P] [US2] Unit test for draft editing domain rules and ownership validation in `tests/unit/domain/test_post_editing.py`
-- [ ] T015 [P] [US2] Integration/Contract test for `PUT /api/v1/author/posts/{id}` endpoint in `tests/contract/api/test_edit_draft.py`
+- [x] T014 [P] [US2] Unit test for draft editing domain rules and ownership validation in `tests/unit/domain/test_post_editing.py`
+- [x] T015 [P] [US2] Integration/Contract test for `PUT /api/v1/author/posts/{id}` endpoint in `tests/contract/api/test_edit_draft.py`
 
 ### Implementation for User Story 2
 
-- [ ] T016 [US2] Implement `edit_draft` use case with author authorization check in `src/application/services/post_service.py`
-- [ ] T017 [US2] Implement `PUT /api/v1/author/posts/{id}` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
+- [x] T016 [US2] Implement `edit_draft` use case with author authorization check in `src/application/services/post_service.py`
+- [x] T017 [US2] Implement `PUT /api/v1/author/posts/{id}` endpoint handler in `src/infrastructure/web/controllers/author_controller.py`
 
 **Checkpoint**: User Story 2 is fully functional and independently testable alongside US1.
 
